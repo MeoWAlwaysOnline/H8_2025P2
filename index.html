@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW8 PART2</title>
+
+    <style>
+     div > p:first-child {
+        color: yellow;
+     }
+
+    div > p:nth-child(2) {
+        color: red;
+     }
+
+    div > p:nth-child(3) {
+        color: green;
+     }
+
+     div > p:nth-child(4) {
+        color: blue;
+     }    
+     
+     div > p:nth-child(5) {
+        color: purple;
+     }
+
+    .monday {
+      width: 100%;
+      transition: width 1s ease-in-out; 
+    }
+
+    .monday:hover {
+    width: 50%;
+    }
+
+    .tuesday:focus {
+      background-color: white;
+    }
+
+    .tuesday > a[href^="https"]:focus {
+      color: red;
+    }
+
+    .wednesday > a[href^="https"]:visited {
+      color: green;
+    }
+
+    .thursday > a[href^="https"]:active {
+      color: rgba(0, 0, 255, 0.458);
+    }
+
+    .friday > a[href^="https"]:link {
+      color: rgb(255, 255, 0);
+    }   
+
+    </style>
+</head>
+<body>
+    <div class="monday" style="background-color: grey;">
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <p>Here Hover</p>
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+    </div>
+    <div class="tuesday" style="background-color: grey;">
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <a href="https://www.youtube.com/">YouTube (focus)------------link </a>
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+    </div>
+    <div class="wednesday" style="background-color: grey;">
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <a href="https://www.youtube.com/">YouTube (visited)------------link </a>
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+    </div>
+    <div class="thursday" style="background-color: grey;">
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <a href="https://www.youtube.com/">YouTube (active)------------link </a>
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+    </div>
+    <div class="friday" style="background-color: grey;">
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <a href="https://www.youtube.com/">YouTube (link)------------link </a>
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+    </div>
+</body>
+</html>
